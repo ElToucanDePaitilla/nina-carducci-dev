@@ -3,17 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="icon" href="" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/public/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/public/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/public/android-chrome-192x192.png"> 
+	  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/public/favicon-32x32.png">
+	  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/public/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/public/favicon.ico">   
+    <title>
+      Nina Carducci Photographe - mariages, portraits, évênements, entreprises.
+    </title>
+    
     <meta
       name="description"
-      content="Nina Caducci photographe professionnelle à Bordeaux vous propose ses services de shooting photo, retouches photos, et albums. Exerce sur Bordeaux, Gironde, et toute France."
+      content="Nina Carducci photographe professionnelle à Bordeaux. Mon expertise et ma passion: capturer un moments unique, une émotion, une situation, un endroit, un détail, une lumière et les rendre immortels ! Mes services : shooting photo, retouches photos, albums. "
     />
     <meta
       name="keywords"
       content="Photographe, mariages, portraits, évênements, concerts, entreprises, scéances de shooting, retouches photo, albums photos."
     />
-    <title>
-      Nina Carducci Photographe - mariages, portraits, évênements, entreprises
-    </title>
 
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
     <link rel="stylesheet" href="./assets/style.css" />
@@ -24,14 +33,14 @@
       rel="stylesheet"
     />
 
-    <!-- Balises Open Graph pour les réseaux sociaux !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! à compléter -->
-    <meta property="og:title" content="Votre Titre de Page" />
+    <!-- Balises Open Graph pour les réseaux sociaux -->
+    <meta property="og:title" content="Nina Carducci Photographe à Bordeaux" />
     <meta
       property="og:description"
-      content="Une brève description de votre page."
+      content="Scéances de shooting photo, retouche photos, albums - Portraits, Mariages, Evenements, Concerts, Entreprises."
     />
-    <meta property="og:image" content="URL_de_votre_image" />
-    <meta property="og:url" content="URL_de_votre_page" />
+    <meta property="og:image" content="https://eltoucandepaitilla.github.io/nina-carducci-dev/assets/images/nina.webp?v=2" />
+    <meta property="og:url" content="https://eltoucandepaitilla.github.io/nina-carducci-dev/" />
 
     <!-- Préchargement des ressources critiques -->
     <link rel="preload" href="./assets/bootstrap/bootstrap.css" as="style" />
@@ -74,7 +83,7 @@
           "postalCode": "33200",
           "addressCountry": "FR"
         },
-        "openingHours": "Mo-Fr 10:00-19:00", <!-- Disponibilité téléphonique -->
+        "openingHours": "Mo-Fr 10:00-19:00",
         "geo": {
           "@type": "GeoCoordinates",
           "latitude": 44.84676,
@@ -121,8 +130,8 @@
   </head>
 
   <body>
-    <div class="top-header">
-      <h3 class="name">Nina Carducci</h3>
+    <nav class="top-header">
+      <h1 class="name">Nina Carducci</h1>
       <div class="nav">
         <ul>
           <li><a href="#about">À propos</a></li>
@@ -136,13 +145,13 @@
               target="_blank"
               ><img
                 src="assets/images/instagram.png"
-                alt="Icone réseaux sociaux Instagram Nina Carducci photographe professionnelle à Bordeaux en France - mariages,  évenements, portaraits, photo artistique"
+                alt="logo Instagram"
             /></a>
           </li>
         </ul>
       </div>
-    </div>
-    <div id="header">
+    </nav>
+    <header id="header">
       <div
         id="carouselExampleIndicators"
         class="carousel slide"
@@ -212,21 +221,21 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </div>
-    <div id="about">
+    </header>
+    <main id="about">
       <div class="picture left">
         <img
           src="./assets/images/nina.webp"
-          alt="Portait de Nina Carducci photographe professionnelle à Bordeaux en France"
+          alt="Nina Carducci"
         />
       </div>
       <div id="about-me">
-        <h3 class="about-me__title">A propos de moi</h3>
-        <h6 class="about-me__introduction">
+        <h2 class="about-me__title">A propos de moi</h2>
+        <h3 class="about-me__introduction">
           Devenir photographe était pour moi une évidence. Comme si j’y étais
           prédestiné. Saisir un moment, une émotion, une situation, un endroit,
           une lumière et les rendre immortels, voilà ce qui me fait vibrer.
-        </h6>
+        </h3>
         <p>
           Nous passons notre vie à chercher le bonheur, et lorsque nous y
           touchons, nous n’avons qu’une envie : le figer au travers de
@@ -238,9 +247,9 @@
           lumière à chaque fois que vous poserez les yeux sur vos photos.
         </p>
       </div>
-    </div>
+    </main>
     <div id="gallery">
-      <h3 class="title">Portfolio</h3>
+      <h2 class="title">Portfolio</h2>
       <div class="container py-3">
         <div class="gallery" style="display: none">
           <img
@@ -302,19 +311,19 @@
       <div class="quote">
         <figure>
           <blockquote>
-            <h1 class="quote__text">
+            <h2 class="quote__text">
               Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
               qu’un fait est traduit en photo, il cesse d’être un fait pour
               devenir une opinion. L’inexactitude n’existe pas en photographie.
               Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
-            </h1>
+            </h2>
           </blockquote>
           <figcaption class="quote__author">- Richard Avedon</figcaption>
         </figure>
       </div>
     </div>
     <div id="services">
-      <h3 class="title">Mes services</h3>
+      <h2 class="title">Mes services</h2>
       <div class="container">
         <div class="service">
           <div class="service__description">
@@ -361,16 +370,16 @@
     <div class="quote">
       <figure>
         <blockquote>
-          <h1 class="quote__text">
+          <h2 class="quote__text">
             De manière inconsciente, je crois, je guette un regard, une
             expression, des traits ou une nostalgie capable de résumer ou plus
             exactement de révéler une vie
-          </h1>
+          </h2>
         </blockquote>
         <figcaption class="quote__author">- Richard Avedon</figcaption>
       </figure>
     </div>
-    <div id="contact">
+    <footer id="contact">
       <div class="container">
         <div class="form-container">
           <h3>Une question ? Une demande de devis ?</h3>
@@ -378,18 +387,13 @@
             N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
           </p>
           <form action="" method="post">
-            <label>Nom</label>
-            <input type="text" name="nom" id="nom" />
-            <label>Email</label>
-            <input type="email" name="email" id="email" />
-            <label>Message</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-            ></textarea>
-            <input type="submit" value="Envoyer" />
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom" aria-label="nom" aria-required="true"/>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" aria-label="email" aria-required="true"/>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" aria-label="message" aria-required="true"></textarea>
+            <input type="submit" value="Envoyer" aria-label="Envoyer"/>
           </form>
         </div>
         <div class="picture right">
@@ -399,6 +403,13 @@
           />
         </div>
       </div>
-    </div>
+      <div class="infos-bureau">
+          <h3>Nina CARDUCCI - Photographe</h3>
+          <div>68 avenue Alsace-Lorraine - 33200 Bordeaux</div>
+          <div>Mail: ninacarducci@cmoi.fr</div>
+          <div>Tél. : +33 5 56 67 78 89</div>
+          <div>Horaires téléphoniques : du Lundi au Vendredi de 10:00 à 19:00.</div>
+      </div>
+    </footer>
   </body>
 </html>
