@@ -33,16 +33,6 @@
     <meta property="og:image" content="URL_de_votre_image" />
     <meta property="og:url" content="URL_de_votre_page" />
 
-    <!-- Données structurées avec Schema.org !!!!!!!!!!!!!!!!!!!!!! à compléter-->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Votre Titre de Page",
-        "description": "Une brève description de votre page."
-      }
-    </script>
-
     <!-- Préchargement des ressources critiques -->
     <link rel="preload" href="./assets/bootstrap/bootstrap.css" as="style" />
     <link
@@ -60,6 +50,74 @@
     ></script>
     <script src="./assets/maugallery.js" defer></script>
     <script src="./assets/scripts.js" defer></script>
+
+    <!-- Script JSON-LD pour les informations locales -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "image": [
+          "https://nina-carducci.github.io/assets/images/nina.png",
+          "https://nina-carducci.github.io/assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg",
+          "https://nina-carducci.github.io/assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg",
+          "https://nina-carducci.github.io/assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg"
+        ],
+        "name": "Nina Carducci Photographe",
+        "@id": "https://nina-carducci.github.io/",
+        "url": "https://nina-carducci.github.io/",
+        "telephone": "+33-5-56-67-78-89",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "addressRegion": "Nouvelle-Aquitaine",
+          "postalCode": "33200",
+          "addressCountry": "FR"
+        },
+        "openingHours": "Mo-Fr 10:00-19:00", <!-- Disponibilité téléphonique -->
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 44.84676,
+          "longitude": -0.60653
+        },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Shooting photo",
+            "priceCurrency": "EUR",
+            "price": "350",
+            "description": "Séance de shooting photo professionnelle pour capturer vos moments précieux. Déplacement en Île-de-France. Prix à la demi-journée.",
+            "url": "https://nina-carducci.github.io/#services"
+          },
+          {
+            "@type": "Offer",
+            "name": "Retouches photo",
+            "priceCurrency": "EUR",
+            "price": "50",
+            "description": "Service de retouche photo pour un rendu professionnel. Améliorez vos images pour des publications optimales. Prix par photo, avec 2 allers-retours inclus.",
+            "url": "https://nina-carducci.github.io/#services"
+          },
+          {
+            "@type": "Offer",
+            "name": "Album photos",
+            "priceCurrency": "EUR",
+            "price": "50",
+            "description": "Création d'albums photo personnalisés pour partager vos moments précieux. Prix par album A4, 30 pages recto/verso.",
+            "url": "https://nina-carducci.github.io/#services"
+          }
+          ],
+          "founder": {
+          "@type": "Person",
+          "name": "Nina Carducci",
+          "jobTitle": "Photographe",
+          "image": "https://nina-carducci.github.io/assets/images/nina.png",
+          "description": "Nina Carducci, photographe professionnelle spécialisée dans les mariages, portraits et concerts. Disponible par téléphone du lundi au vendredi de 10h à 19h.",
+          "sameAs": [
+            "https://www.instagram.com/ninacarducci.photo/?hl=fr"
+          ]
+        }
+      }
+      </script>
   </head>
 
   <body>
