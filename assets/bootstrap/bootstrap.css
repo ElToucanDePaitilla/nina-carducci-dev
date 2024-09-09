@@ -6050,13 +6050,13 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15%;
+  width: 15%;/* position par rapport à la marge */
   padding: 0;
-  color: #fff;
+  color: #fff;/* Couleur initiale #fff */
   text-align: center;
   background: none;
   border: 0;
-  opacity: 0.5;
+  opacity: 0.5; /* Opacity initiale 0.5 */
   transition: opacity 0.15s ease;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -6071,7 +6071,7 @@ textarea.form-control-lg {
   color: #fff;
   text-decoration: none;
   outline: 0;
-  opacity: 0.9;
+  opacity: 1; /* Opacity initiale 0.9 */
 }
 
 .carousel-control-prev {
@@ -6082,11 +6082,12 @@ textarea.form-control-lg {
   right: 0;
 }
 
+/* Boutons gauches et droites pour faire défiler le carousel */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   display: inline-block;
-  width: 2rem;
-  height: 2rem;
+  width: 6rem; /* width initiale 2rem */
+  height: 6rem; /* height initiale 2rm */
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 100% 100%;
@@ -6100,6 +6101,7 @@ textarea.form-control-lg {
     "replace" : "next"
   } ]
 } */
+
 .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
 }
@@ -6122,24 +6124,25 @@ textarea.form-control-lg {
   margin-left: 15%;
   list-style: none;
 }
-/* Boutons indicateurs du carroussel*/
+
+/* Boutons bas indicateurs du carroussel*/
 .carousel-indicators [data-bs-target] {
   box-sizing: content-box;
   flex: 0 1 auto;
-  width: 30px;
+  width: 120px; /* Longueur initiale 30px */
   height: 6px; /* Epaisseur du bouton indicateur */
   padding: 0;
-  margin-right: 3px;
-  margin-left: 3px;
+  margin-right: 10px; /* Margin initial 3px */
+  margin-left: 10px; /* Margin initial 3px */
   text-indent: -999px;
   cursor: pointer;
-  background-color: #878240;/* Couleur du bouton indicateur, valeur initiale #fff */
+  background-color: #fff;/* Couleur des boutons indicateurs de défilement en bas du carousel, valeur initiale #fff */
   background-clip: padding-box;
   border: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  opacity: 0.4;/* couleur des boutons, position initiale 0.5 */
-  transition: opacity 0.6s ease;/* couleur des boutons, position initiale 0.6 */
+  opacity: 0.4;/* Opacity des boutons indicateurs de défilement non actifs, en bas du carousel, valeur initiale 0.5 */
+  transition: opacity 0.6s ease;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-indicators [data-bs-target] {
