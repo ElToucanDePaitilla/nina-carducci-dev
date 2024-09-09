@@ -81,7 +81,7 @@ body {
 }
 .about-me__introduction {
 	font-family: 'Spectral';
-	font-weight: 800;
+	font-weight: 500;/* Valeur initiale 800 */
 	font-style: italic;
 	width: 60%;
 }
@@ -101,13 +101,13 @@ body {
 	justify-content: center;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
+	color: #242424;
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
 	color: #000000;
-	cursor: pointer;	/*ajout d'un pointer*/
+	cursor: pointer; /* ajout d'un pointer */
 }
 .item-column {
 	position: relative;
@@ -127,6 +127,7 @@ body {
 	object-fit: cover;
 	padding: .5em;
 }
+/* Flèche défilement avant-après gallerie photos du portfolio */
 .mg-prev, .mg-next {
 	width: 30px;
 	height: 30px;
@@ -134,9 +135,8 @@ body {
 	justify-content: center;
 	align-items: center;
 	display: flex;
-	font-size: 24px;
+	font-size: 24px;/*Valeur initiale 24px*/
 }
-
 .quote {
 	font-family: 'Spectral';
 	font-style: italic;
@@ -242,8 +242,19 @@ form textarea {
 }
 input[type="submit"] {
 	background-color: #BEB45A;
-	padding: .5em 1em
+	padding: .5em 1em;
+	color: #242424;
 }
+
+.infos-bureau {
+	margin-top: 60px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	z-index: 3;
+}
+
+
 
 @media all and (max-width: 1180px) {
 	.picture {
@@ -353,5 +364,11 @@ input[type="submit"] {
 	.picture {
 		width: 80%;
 	}
+
+
+
+
+
+
 }
 

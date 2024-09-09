@@ -1,128 +1,138 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Nina Caducci photographe professionnelle à Bordeaux vous propose ses services de shooting photo, retouches photos, et albums. Exerce sur Bordeaux, Gironde, et toute France."
-    />
-    <meta
-      name="keywords"
-      content="Photographe, mariages, portraits, évênements, concerts, entreprises, scéances de shooting, retouches photo, albums photos."
-    />
-    <title>
-      Nina Carducci Photographe - mariages, portraits, évênements, entreprises
-    </title>
+  
+<head>
+  <meta charset="UTF-8" />
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes">
 
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
-    <link rel="stylesheet" href="./assets/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="icon" href="" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/public/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/public/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/public/android-chrome-192x192.png"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/public/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/public/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/public/favicon.ico">   
+  <title>
+    Nina Carducci Photographe - mariages, portraits, évênements, entreprises.
+  </title>
+  
+  <meta
+    name="description"
+    content="Nina Carducci photographe professionnelle à Bordeaux. Mon expertise et ma passion: capturer un moment unique, une émotion, une situation, un endroit, un détail, une lumière et les rendre immortels ! Mes services : shooting photo, retouches photos, albums. "
+  />
+  <meta
+    name="keywords"
+    content="Photographe, mariages, portraits, évênements, concerts, entreprises, séances de shooting, retouches photo, albums photos."
+  />
 
-    <!-- Balises Open Graph pour les réseaux sociaux !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! à compléter -->
-    <meta property="og:title" content="Votre Titre de Page" />
-    <meta
-      property="og:description"
-      content="Une brève description de votre page."
-    />
-    <meta property="og:image" content="URL_de_votre_image" />
-    <meta property="og:url" content="URL_de_votre_page" />
+  <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+    rel="stylesheet"
+  />
 
-    <!-- Préchargement des ressources critiques -->
-    <link rel="preload" href="./assets/bootstrap/bootstrap.css" as="style" />
-    <link
-      rel="preload"
-      href="./assets/bootstrap/bootstrap.bundle.js"
-      as="script"
-    />
+  <!-- Balises Open Graph pour les réseaux sociaux -->
+  <meta property="og:title" content="Nina Carducci Photographe à Bordeaux" />
+  <meta
+    property="og:description"
+    content="Séances de shooting photo, retouche photos, albums - Portraits, Mariages, Événements, Concerts, Entreprises."
+  />
+  <meta property="og:image" content="https://eltoucandepaitilla.github.io/nina-carducci-dev/assets/images/nina.webp?v=2" />
+  <meta property="og:url" content="https://eltoucandepaitilla.github.io/nina-carducci-dev/" />
 
-    <!-- Scripts JavaScript -->
-    <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="./assets/maugallery.js" defer></script>
-    <script src="./assets/scripts.js" defer></script>
+  <!-- Préchargement des ressources critiques -->
+  <link rel="preload" href="./assets/bootstrap/bootstrap.css" as="style" />
+  <link
+    rel="preload"
+    href="./assets/bootstrap/bootstrap.bundle.min.js"
+    as="script"
+  />
 
-    <!-- Script JSON-LD pour les informations locales -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "image": [
-          "https://nina-carducci.github.io/assets/images/nina.png",
-          "https://nina-carducci.github.io/assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg",
-          "https://nina-carducci.github.io/assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg",
-          "https://nina-carducci.github.io/assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg"
-        ],
-        "name": "Nina Carducci Photographe",
-        "@id": "https://nina-carducci.github.io/",
-        "url": "https://nina-carducci.github.io/",
-        "telephone": "+33-5-56-67-78-89",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "68 avenue Alsace-Lorraine",
-          "addressLocality": "Bordeaux",
-          "addressRegion": "Nouvelle-Aquitaine",
-          "postalCode": "33200",
-          "addressCountry": "FR"
+  <!-- Scripts JavaScript -->
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+  ></script>
+  <script src="./assets/maugallery.js" defer></script>
+ 
+  <!-- Script JSON-LD pour les informations locales -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "image": [
+        "https://nina-carducci.github.io/assets/images/nina.png",
+        "https://nina-carducci.github.io/assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg",
+        "https://nina-carducci.github.io/assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg",
+        "https://nina-carducci.github.io/assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg"
+      ],
+      "name": "Nina Carducci Photographe",
+      "@id": "https://nina-carducci.github.io/",
+      "url": "https://nina-carducci.github.io/",
+      "telephone": "+33-5-56-67-78-89",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "68 avenue Alsace-Lorraine",
+        "addressLocality": "Bordeaux",
+        "addressRegion": "Nouvelle-Aquitaine",
+        "postalCode": "33200",
+        "addressCountry": "FR"
+      },
+      "openingHours": "Mo-Fr 10:00-19:00",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 44.84676,
+        "longitude": -0.60653
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Shooting photo",
+          "priceCurrency": "EUR",
+          "price": "350",
+          "description": "Séance de shooting photo professionnelle pour capturer vos moments précieux. Déplacement en Île-de-France. Prix à la demi-journée.",
+          "url": "https://nina-carducci.github.io/#services"
         },
-        "openingHours": "Mo-Fr 10:00-19:00", <!-- Disponibilité téléphonique -->
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 44.84676,
-          "longitude": -0.60653
+        {
+          "@type": "Offer",
+          "name": "Retouches photo",
+          "priceCurrency": "EUR",
+          "price": "50",
+          "description": "Service de retouche photo pour un rendu professionnel. Améliorez vos images pour des publications optimales. Prix par photo, avec 2 allers-retours inclus.",
+          "url": "https://nina-carducci.github.io/#services"
         },
-        "offers": [
-          {
-            "@type": "Offer",
-            "name": "Shooting photo",
-            "priceCurrency": "EUR",
-            "price": "350",
-            "description": "Séance de shooting photo professionnelle pour capturer vos moments précieux. Déplacement en Île-de-France. Prix à la demi-journée.",
-            "url": "https://nina-carducci.github.io/#services"
-          },
-          {
-            "@type": "Offer",
-            "name": "Retouches photo",
-            "priceCurrency": "EUR",
-            "price": "50",
-            "description": "Service de retouche photo pour un rendu professionnel. Améliorez vos images pour des publications optimales. Prix par photo, avec 2 allers-retours inclus.",
-            "url": "https://nina-carducci.github.io/#services"
-          },
-          {
-            "@type": "Offer",
-            "name": "Album photos",
-            "priceCurrency": "EUR",
-            "price": "50",
-            "description": "Création d'albums photo personnalisés pour partager vos moments précieux. Prix par album A4, 30 pages recto/verso.",
-            "url": "https://nina-carducci.github.io/#services"
-          }
-          ],
-          "founder": {
-          "@type": "Person",
-          "name": "Nina Carducci",
-          "jobTitle": "Photographe",
-          "image": "https://nina-carducci.github.io/assets/images/nina.png",
-          "description": "Nina Carducci, photographe professionnelle spécialisée dans les mariages, portraits et concerts. Disponible par téléphone du lundi au vendredi de 10h à 19h.",
-          "sameAs": [
-            "https://www.instagram.com/ninacarducci.photo/?hl=fr"
-          ]
+        {
+          "@type": "Offer",
+          "name": "Album photos",
+          "priceCurrency": "EUR",
+          "price": "50",
+          "description": "Création d'albums photo personnalisés pour partager vos moments précieux. Prix par album A4, 30 pages recto/verso.",
+          "url": "https://nina-carducci.github.io/#services"
         }
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Nina Carducci",
+        "jobTitle": "Photographe",
+        "image": "https://nina-carducci.github.io/assets/images/nina.png",
+        "description": "Nina Carducci, photographe professionnelle spécialisée dans les mariages, portraits et concerts. Disponible par téléphone du lundi au vendredi de 10h à 19h.",
+        "sameAs": [
+          "https://www.instagram.com/ninacarducci.photo/?hl=fr"
+        ]
       }
-      </script>
-  </head>
+    }
+  </script>
+</head>
+
 
   <body>
-    <div class="top-header">
-      <h3 class="name">Nina Carducci</h3>
+    <nav class="top-header">
+      <h1 class="name">Nina Carducci</h1>
       <div class="nav">
         <ul>
           <li><a href="#about">À propos</a></li>
@@ -136,13 +146,13 @@
               target="_blank"
               ><img
                 src="assets/images/instagram.png"
-                alt="Icone réseaux sociaux Instagram Nina Carducci photographe professionnelle à Bordeaux en France - mariages,  évenements, portaraits, photo artistique"
+                alt="logo Instagram"
             /></a>
           </li>
         </ul>
       </div>
-    </div>
-    <div id="header">
+    </nav>
+    <header id="header">
       <div
         id="carouselExampleIndicators"
         class="carousel slide"
@@ -171,15 +181,26 @@
           ></button>
         </div>
         <div class="carousel-inner">
+
           <div class="carousel-item active">
             <img
-              src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
+              srcset="
+              ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-W1920px.webp 1920w,
+              ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-W1200px.webp 1200w,
+              ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-W1000px.webp 1000w,
+              ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-W650px.webp 650w"
+              src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-w1920.webp"
               class="d-block w-100"
               alt="Photo professionnelle de mariage n°1 slider"
             />
           </div>
           <div class="carousel-item">
             <img
+              srcset="
+              ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-W1920px.webp 1920w,
+              ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-W1200px.webp 1200w,
+              ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-W1000px.webp 1000w,
+              ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-W650px.webp 650w"
               src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
               class="d-block w-100"
               alt="Photographie artistique professionnelle n°2 slider"
@@ -187,6 +208,11 @@
           </div>
           <div class="carousel-item">
             <img
+              srcset="
+              ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-W1920px.webp 1920w,
+              ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-W1200px.webp 1200w,
+              ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-W1000px.webp 1000w,
+              ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-W650px.webp 650w"
               src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
               class="d-block w-100"
               alt="Photographie évenementielle professionnelle n°3 slider"
@@ -212,21 +238,21 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </div>
-    <div id="about">
+    </header>
+    <main id="about">
       <div class="picture left">
         <img
           src="./assets/images/nina.webp"
-          alt="Portait de Nina Carducci photographe professionnelle à Bordeaux en France"
+          alt="Nina Carducci"
         />
       </div>
       <div id="about-me">
-        <h3 class="about-me__title">A propos de moi</h3>
-        <h6 class="about-me__introduction">
+        <h2 class="about-me__title">A propos de moi</h2>
+        <h3 class="about-me__introduction">
           Devenir photographe était pour moi une évidence. Comme si j’y étais
           prédestiné. Saisir un moment, une émotion, une situation, un endroit,
           une lumière et les rendre immortels, voilà ce qui me fait vibrer.
-        </h6>
+        </h3>
         <p>
           Nous passons notre vie à chercher le bonheur, et lorsque nous y
           touchons, nous n’avons qu’une envie : le figer au travers de
@@ -238,83 +264,129 @@
           lumière à chaque fois que vous poserez les yeux sur vos photos.
         </p>
       </div>
-    </div>
+    </main>
     <div id="gallery">
-      <h3 class="title">Portfolio</h3>
+      <h2 class="title">Portfolio</h2>
       <div class="container py-3">
         <div class="gallery" style="display: none">
-          <img
+          <img width="420" height="420"
             data-gallery-tag="Concert"
             class="gallery-item"
-            src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
-            alt="photo professionnelle évenement concert"
+            srcset="
+            ./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash-W1920px.webp 1920w,
+            ./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash-W1200px.webp 1200w,
+            ./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash-W1000px.webp 1000w,
+            ./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash-W650px.webp 650w"
+            src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash-W1920px.webp"
+            alt="photo professionnelle évenement concert - Salle de concert avec éclairages spectaculaires"
           />
-          <img
-            data-gallery-tag="Entreprises"
-            class="gallery-item"
-            src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
-            alt="photo professionnelle pour entreprises"
+          <img width="420" height="420"
+          data-gallery-tag="Entreprise"
+          class="gallery-item"
+          srcset="
+          ./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-W1920px.webp 1920w,
+          ./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-W1200px.webp 1200w,
+          ./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-W1000px.webp 1000w,
+          ./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-W650px.webp 650w"
+          src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-W1920px.webp"
+          alt="photo professionnelle entreprise - portrait d'un jeune dirigeant d'entreprise, sûr de lui et exprimant la réussite de son entreprise"
           />
-          <img
-            data-gallery-tag="Entreprises"
-            class="gallery-item"
-            src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
-            alt="photo professionnelle pour sociétés"
+          <img width="420" height="420"
+          data-gallery-tag="Entreprise"
+          class="gallery-item"
+          srcset="
+          ./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-W1920px.webp 1920w,
+          ./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-W1200px.webp 1200w,
+          ./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-W1000px.webp 1000w,
+          ./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-W650px.webp 650w"
+          src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-W1920px.webp"
+          alt="photo professionnelle entreprise - portrait d'une jeune femme souriante, sur son lieu de travail"
           />
-          <img
-            data-gallery-tag="Mariages"
-            class="gallery-item"
-            src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
-            alt="photo professionnelle de mariage"
+          <img width="420" height="420"
+          data-gallery-tag="Mariage"
+          class="gallery-item"
+          srcset="
+          ./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-W1920px.webp 1920w,
+          ./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-W1200px.webp 1200w,
+          ./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-W1000px.webp 1000w,
+          ./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-W650px.webp 650w"
+          src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-W1920px.webp"
+          alt="photo professionnelle de mariage - mains des jeunes mariés tendues l'une vers l'autre"
           />
-          <img
-            data-gallery-tag="Portrait"
-            class="gallery-item"
-            src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
-            alt="photo professionnelle de portait"
+          <img width="420" height="420"
+          data-gallery-tag="Portrait"
+          class="gallery-item"
+          srcset="
+          ./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-W1920px.webp 1920w,
+          ./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-W1200px.webp 1200w,
+          ./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-W1000px 1000w,
+          ./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-W650px.webp 650w"
+          src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-W1920px.webp"
+          alt="photo professionnelle de portrait - Homme se concentrant"
           />
-          <img
-            data-gallery-tag="Mariages"
-            class="gallery-item"
-            src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
-            alt="photo professionnelle évenement mariage"
+          <img width="420" height="420"
+          data-gallery-tag="Mariage"
+          class="gallery-item"
+          srcset="
+          ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-W1920px.webp 1920w,
+          ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-W1200px.webp 1200w,
+          ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-W1000px.webp 1000w,
+          ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-W650px.webp 650w"
+          src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-W1920px.webp"
+          alt="photo professionnelle de mariage - Couple de jeunes mariés en tenue de cérémonie riant et marchant en se prenant le bras"
           />
-          <img
-            data-gallery-tag="Portrait"
-            class="gallery-item"
-            src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"
-            alt="photo de portait artistique"
+          <img width="420" height="420"
+          data-gallery-tag="Portrait"
+          class="gallery-item"
+          srcset="
+          ./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-W1920px.webp 1920w,
+          ./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-W1200px.webp 1200w,
+          ./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-W1000px.webp 1000w,
+          ./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-W650px.webp 650w"
+          src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-W1920px.webp"
+          alt="photo professionnelle de portrait - Jeune femme en extérieur avec lunettes de vue et se tenant les cheveux"
           />
-          <img
-            data-gallery-tag="Concert"
-            class="gallery-item"
-            src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
-            alt="photo professionnelle évenement concert"
+          <img width="420" height="420"
+          data-gallery-tag="Concert"
+          class="gallery-item"
+          srcset="
+          ./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-W1920px.webp 1920w,
+          ./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-W1200px.webp 1200w,
+          ./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-W1000px.webp 1000w,
+          ./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-W650px.webp 650w"
+          src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-W1920px.webp"
+          alt="photo professionnelle évenement concert - Chanteur dans une salle de concert avec jeux de lumière et fumée, environnement spectaculaire"
           />
-          <img
-            data-gallery-tag="Entreprises"
-            class="gallery-item"
-            src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
-            alt="photo professionnelle pour les entreprises"
+
+          <img width="420" height="420"
+          data-gallery-tag="Entreprise"
+          class="gallery-item"
+          srcset="
+          ./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-W1920px.webp 1920w,
+          ./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-W1200px.webp 1200w,
+          ./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-W1000px.webp 1000w,
+          ./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-W650px.webp 650w"
+          src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-W1920px.webp"
+          alt="photo professionnelle entreprise - Jeune femme riante et d'hummeur joyeuse utilisant un ordinateur portable"
           />
         </div>
       </div>
       <div class="quote">
         <figure>
           <blockquote>
-            <h1 class="quote__text">
+            <h2 class="quote__text">
               Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
               qu’un fait est traduit en photo, il cesse d’être un fait pour
               devenir une opinion. L’inexactitude n’existe pas en photographie.
               Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
-            </h1>
+            </h2>
           </blockquote>
           <figcaption class="quote__author">- Richard Avedon</figcaption>
         </figure>
       </div>
     </div>
     <div id="services">
-      <h3 class="title">Mes services</h3>
+      <h2 class="title">Mes services</h2>
       <div class="container">
         <div class="service">
           <div class="service__description">
@@ -361,36 +433,34 @@
     <div class="quote">
       <figure>
         <blockquote>
-          <h1 class="quote__text">
+          <h2 class="quote__text">
             De manière inconsciente, je crois, je guette un regard, une
             expression, des traits ou une nostalgie capable de résumer ou plus
             exactement de révéler une vie
-          </h1>
+          </h2>
         </blockquote>
         <figcaption class="quote__author">- Richard Avedon</figcaption>
       </figure>
     </div>
-    <div id="contact">
+    <footer id="contact">
       <div class="container">
         <div class="form-container">
           <h3>Une question ? Une demande de devis ?</h3>
           <p>
             N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
           </p>
-          <form action="" method="post">
-            <label>Nom</label>
-            <input type="text" name="nom" id="nom" />
-            <label>Email</label>
-            <input type="email" name="email" id="email" />
-            <label>Message</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-            ></textarea>
-            <input type="submit" value="Envoyer" />
-          </form>
+          <form action="" method="get">
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom" aria-label="nom" aria-required="true" autocomplete="name" />
+            
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" aria-label="email" aria-required="true" autocomplete="email" />
+            
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" aria-label="message" aria-required="true"></textarea>
+            
+            <input type="submit" value="Envoyer" aria-label="Envoyer" disabled aria-disabled="true"/>
+        </form>
         </div>
         <div class="picture right">
           <img
@@ -399,6 +469,20 @@
           />
         </div>
       </div>
-    </div>
+      <div class="infos-bureau">
+          <h3>Nina CARDUCCI - Photographe</h3>
+          <div>68 avenue Alsace-Lorraine - 33200 Bordeaux</div>
+          <div>Mail: ninacarducci@cmoi.fr</div>
+          <div>Tél. : +33 5 56 67 78 89</div>
+          <div>Horaires téléphoniques : du Lundi au Vendredi de 10:00 à 19:00.</div>
+      </div>
+    </footer>
+
+  <!----- SCRIPTS ----->
+  <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+ 
+
+  <script src="./assets/scripts.js"></script> <!--Ce script sera commentarisé lorsque la version minifiée aura été mis à jours -->
+  <!-- <script src="./assets/scripts.min.js"></script> Ce script sera décommentarisé lorsqu'il aura été mis à jours -->
   </body>
 </html>
