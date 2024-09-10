@@ -252,9 +252,16 @@ input[type="submit"] {
 	flex-direction: column;
 	align-items: center;
 	z-index: 3;
+	z-index: 10;
+    position: relative;
+	text-align: center;
 }
 
+#form-maintenance {
+ text-align: center;
+}
 
+/*##############################################################################################*/
 
 @media all and (max-width: 1180px) {
 	.picture {
