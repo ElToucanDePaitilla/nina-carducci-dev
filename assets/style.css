@@ -261,7 +261,14 @@ input[type="submit"] {
  text-align: center;
 }
 
-/*##############################################################################################*/
+#form-maintenance a {
+	font-weight: 600;
+	color: #000000;
+   }
+   
+
+
+/*##################################### RESPONSIVE ############################################*/
 
 @media all and (max-width: 1180px) {
 	.picture {
@@ -371,11 +378,6 @@ input[type="submit"] {
 	.picture {
 		width: 80%;
 	}
-
-
-
-
-
 
 }
 
