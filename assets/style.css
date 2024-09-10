@@ -255,13 +255,26 @@ input[type="submit"] {
 	z-index: 10;
     position: relative;
 	text-align: center;
+    background-color: #d8d3a8;
+    padding: 50px;
+    border-radius: 10px;
+	max-width: 560px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #form-maintenance {
  text-align: center;
 }
 
-/*##############################################################################################*/
+#form-maintenance a {
+	font-weight: 600;
+	color: #000000;
+   }
+   
+
+
+/*##################################### RESPONSIVE ############################################*/
 
 @media all and (max-width: 1180px) {
 	.picture {
@@ -371,11 +384,6 @@ input[type="submit"] {
 	.picture {
 		width: 80%;
 	}
-
-
-
-
-
 
 }
 
