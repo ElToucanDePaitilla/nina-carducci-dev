@@ -1,103 +1,60 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+  <!-- Meta Viewport & Charset --> 
     <meta charset="UTF-8" />
-
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes"
     />
 
-    <link rel="icon" href="" type="image/x-icon" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/images/public/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/images/public/android-chrome-512x512.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/images/public/android-chrome-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/public/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/images/public/favicon-16x16.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/images/public/favicon.ico"
-    />
+    <!--Balises title et canonical-->
     <title>
-      Nina Carducci Photographe - mariages, portraits, évênements, entreprises.
+      Photographe à Bordeaux - Mariages, Portraits, Événements | Nina Carducci
     </title>
+    <link rel="canonical" href="https://eltoucandepaitilla.github.io/nina-carducci-dev/"/><!--Imméd après title, et avant toute autre balise meta-->
 
-    <meta
-      name="description"
-      content="Nina Carducci photographe professionnelle à Bordeaux. Mon expertise et ma passion: capturer un moment unique, une émotion, une situation, un endroit, un détail, une lumière et les rendre immortels ! Mes services : shooting photo, retouches photos, albums. "
-    />
-    <meta
-      name="keywords"
-      content="Photographe, mariages, portraits, évênements, concerts, entreprises, séances de shooting, retouches photo, albums photos."
-    />
+    <!--Meta description et keywords-->
+    <meta name="description" content="Nina Carducci, photographe professionnelle à Bordeaux. Spécialisée dans les mariages, portraits, événements et concerts, entreprise, corporate. Devis gratuit, tarifs et services : shooting, retouches photo, albums personnalisés. Déplacement sur Bordeaux et Gironce, Paris, Ile de France." />
+    <meta name="keywords" content="photographe à Bordeaux, photographe mariage Bordeaux, portrait professionnel, séance photo entreprise, photographie événementielle, photographe concerts Bordeaux, photographe retouches photos, albums photos personnalisés" />
 
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="./assets/style.min.css" />
+
+     <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Photographe à Bordeaux - Shotting photo, Mariages, Portraits, Événements | Nina Carducci">
+    <meta property="og:url" content="https://eltoucandepaitilla.github.io/nina-carducci-dev/">
+    <meta property="og:image" content="https://eltoucandepaitilla.github.io/nina-carducci-dev/assets/images/nina-carducci-photographe-bordeaux.webp?v=2">
+    <meta property="og:description" content="Nina Carducci, photographe professionnelle à Bordeaux. Spécialisée dans les mariages, portraits, événements et concerts, entreprise, corporate. Devis gratuit, tarifs et services : shooting, retouches photo, albums personnalisés. Déplacement sur Bordeaux et Gironce, Paris, Ile de France.">
+    
+    <!--Icons-->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="./assets/images/public/apple-touch-icon.png" />
+
+    <!-- Preconnect to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap-origin.css" />
+    <link rel="stylesheet" href="./assets/style.min.css" />
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Balises Open Graph pour les réseaux sociaux -->
-    <meta property="og:title" content="Nina Carducci Photographe à Bordeaux" />
-    <meta
-      property="og:description"
-      content="Séances de shooting photo, retouche photos, albums - Portraits, Mariages, Événements, Concerts, Entreprises."
-    />
-    <meta
-      property="og:image"
-      content="https://eltoucandepaitilla.github.io/nina-carducci-dev/assets/images/nina.webp?v=2"
-    />
-    <meta
-      property="og:url"
-      content="https://eltoucandepaitilla.github.io/nina-carducci-dev/"
-    />
-
-    <!-- Préchargement des ressources critiques -->
-    <link rel="preload" href="./assets/bootstrap/bootstrap.min.css" as="style" />
-    <link
-      rel="preload"
-      href="./assets/bootstrap/bootstrap.bundle.min.js"
-      as="script"
-    />
-
-    <!-- Scripts JavaScript -->
+    
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
+      crossorigin="anonymous" 
     ></script>
+
+    <!-- Scripts JavaScripts différés pour éviter de bloquer le rendu -->
+    
+    <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
     <script src="./assets/maugallery.js" defer></script>
 
-    <!-- Script JSON-LD pour les informations locales -->
+    <!-- Script JSON-LD for LocalBusiness Schema -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -132,7 +89,7 @@
             "name": "Shooting photo",
             "priceCurrency": "EUR",
             "price": "350",
-            "description": "Séance de shooting photo professionnelle pour capturer vos moments précieux. Déplacement en Île-de-France. Prix à la demi-journée.",
+            "description": "Séance de shooting photo professionnelle à Bordeaux pour mariages, portraits, événements et entreprises. Déplacement en Île-de-France et Nouvelle-Aquitaine. Prix à la demi-journée.",
             "url": "https://nina-carducci.github.io/#services"
           },
           {
@@ -140,34 +97,95 @@
             "name": "Retouches photo",
             "priceCurrency": "EUR",
             "price": "50",
-            "description": "Service de retouche photo pour un rendu professionnel. Améliorez vos images pour des publications optimales. Prix par photo, avec 2 allers-retours inclus.",
+            "description": "Service de retouche photo professionnelle à Bordeaux. Sublimez vos photos de mariage, portrait ou événement avec un rendu optimal. Prix par photo avec 2 allers-retours inclus.",
             "url": "https://nina-carducci.github.io/#services"
           },
           {
             "@type": "Offer",
             "name": "Album photos",
             "priceCurrency": "EUR",
-            "price": "50",
-            "description": "Création d'albums photo personnalisés pour partager vos moments précieux. Prix par album A4, 30 pages recto/verso.",
+            "price": "400",
+            "description": "Création d'albums photos personnalisés pour immortaliser vos souvenirs de mariage, portraits ou événements à Bordeaux et en Nouvelle-Aquitaine. Album A4 de 30 pages recto/verso.",
+            "url": "https://nina-carducci.github.io/#services"
+          },
+          {
+            "@type": "Offer",
+            "name": "Séance photo en studio",
+            "priceCurrency": "EUR",
+            "price": "200",
+            "description": "Séance photo professionnelle en studio à Bordeaux. Idéal pour portraits, photos de famille ou pour vos projets professionnels.",
+            "url": "https://nina-carducci.github.io/#services"
+          },
+          {
+            "@type": "Offer",
+            "name": "Photographie événementielle en extérieur",
+            "priceCurrency": "EUR",
+            "price": "500",
+            "description": "Service de photographie pour événements en extérieur, que ce soit des mariages, concerts ou festivals à Bordeaux et Nouvelle-Aquitaine.",
             "url": "https://nina-carducci.github.io/#services"
           }
         ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "87"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Jean Dupont"
+            },
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            },
+            "datePublished": "2024-05-01",
+            "reviewBody": "Nina est une photographe exceptionnelle ! Elle a su capturer des moments uniques lors de notre mariage."
+          }
+        ],
+        "paymentAccepted": ["Cash", "CreditCard", "PayPal", "BankTransfer"],
+        "potentialAction": {
+          "@type": "ReserveAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://nina-carducci.github.io/reservation",
+            "inLanguage": "fr",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform"
+            ]
+          },
+          "result": {
+            "@type": "Reservation",
+            "name": "Séance photo"
+          }
+        },
         "founder": {
           "@type": "Person",
           "name": "Nina Carducci",
           "jobTitle": "Photographe",
           "image": "https://nina-carducci.github.io/assets/images/nina.png",
-          "description": "Nina Carducci, photographe professionnelle spécialisée dans les mariages, portraits et concerts. Disponible par téléphone du lundi au vendredi de 10h à 19h.",
-          "sameAs": ["https://www.instagram.com/ninacarducci.photo/?hl=fr"]
+          "description": "Nina Carducci, photographe professionnelle spécialisée dans les mariages, portraits, concerts et événements d'entreprise à Bordeaux. Disponible par téléphone du lundi au vendredi de 10h à 19h.",
+          "sameAs": [
+            "https://www.instagram.com/ninacarducci.photo/?hl=fr",
+            "https://www.facebook.com/ninacarducci.photographe",
+            "https://twitter.com/ninacarducci"
+          ]
         }
       }
-    </script>
+      </script>
+      
+    <!-- Google Site Verification -->  
     <meta name="google-site-verification" content="vEX-h3S5TRa1PhnbEQcnRP9UmqzW8nzztvKuASB30oc" />
+
   </head>
 
   <body>
     <nav class="top-header">
-      <h1 class="name">Nina Carducci</h1>
+      <h1 class="name">Nina Carducci - Photographe</h1>
       <div class="nav">
         <ul>
           <li><a href="#about">À propos</a></li>
@@ -276,25 +294,22 @@
     </header>
     <main id="about">
       <div class="picture left">
-        <img src="./assets/images/nina.webp" alt="Nina Carducci" />
+        <img src="./assets/images/nina.webp" alt="Nina Carducci, photographe professionnelle à Bordeaux." />
+
       </div>
       <div id="about-me">
-        <h2 class="about-me__title">A propos de moi</h2>
+        <h2 class="about-me__title">Nina Carducci, un regard créatif sur vos moments uniques</h2>          
         <h3 class="about-me__introduction">
           Devenir photographe était pour moi une évidence. Comme si j’y étais
           prédestiné. Saisir un moment, une émotion, une situation, un endroit,
           une lumière et les rendre immortels, voilà ce qui me fait vibrer.
         </h3>
         <p>
-          Nous passons notre vie à chercher le bonheur, et lorsque nous y
-          touchons, nous n’avons qu’une envie : le figer au travers de
-          photographies pour le savourer avec les personnes qui sont importantes
-          à nos yeux, ou le partager au plus grand nombre. C’est ce que je vous
-          propose : saisir ces merveilleux moments au travers de mon regard, mon
-          approche, ma technique. Rendre ces moments immortels, afin que vous
-          puissiez y puiser de l’amour, du bonheur, de la tendresse et de
-          lumière à chaque fois que vous poserez les yeux sur vos photos.
-        </p>
+          Photographe professionnelle à Bordeaux, je me spécialise dans les mariages, portraits, événements et concerts. Que ce soit pour un portrait pro ou un reportage photo, je m'engage à capturer chaque émotion avec créativité. Je propose également des séances en extérieur ou en studio, des retouches soignées, et la création d'albums personnalisés. Contactez-moi pour un devis gratuit et découvrez comment immortaliser vos plus beaux moments.
+          </p>
+        <p>
+          Envie d'en savoir plus ? <a href="#services">Découvrez tous mes services</a> ou <a href="#contact">contactez-moi</a> dès aujourd'hui pour un devis gratuit.
+          </p>
       </div>
     </main>
     <div id="gallery">
@@ -327,7 +342,7 @@
               ./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-W650px.webp   650w
             "
             src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-W1920px.webp"
-            alt="photo professionnelle entreprise - portrait d'un jeune dirigeant d'entreprise, sûr de lui"
+            alt="photo professionnelle entreprise - Portrait d'un jeune dirigeant d'entreprise, sûr de lui"
           />
           <img
             width="420"
@@ -341,7 +356,7 @@
               ./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-W650px.webp   650w
             "
             src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-W1920px.webp"
-            alt="photo professionnelle entreprise - portrait d'une jeune femme au travail souriante"
+            alt="photo professionnelle entreprise - Portrait d'une jeune femme au travail souriante"
           />
           <img
             width="420"
@@ -355,7 +370,7 @@
               ./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-W650px.webp   650w
             "
             src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-W1920px.webp"
-            alt="photo professionnelle de mariage - mains des jeunes mariés tendues l'une vers l'autre"
+            alt="photo professionnelle de mariage - Mains des jeunes mariés tendues l'une vers l'autre"
           />
           <img
             width="420"
@@ -369,7 +384,7 @@
               ./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-W650px.webp   650w
             "
             src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-W1920px.webp"
-            alt="photo professionnelle de portrait - Homme se concentrant"
+            alt="photo professionnelle de portrait - Portrait d'un homme se concentrant"
           />
           <img
             width="420"
@@ -397,7 +412,7 @@
               ./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-W650px.webp   650w
             "
             src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-W1920px.webp"
-            alt="photo professionnelle de portrait - Jeune femme pensive se tenant les cheveux"
+            alt="photo professionnelle de portrait - Portrait d'une jeune femme pensive se tenant les cheveux"
           />
           <img
             width="420"
@@ -426,7 +441,7 @@
               ./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-W650px.webp   650w
             "
             src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-W1920px.webp"
-            alt="photo professionnelle entreprise - Jeune femme au travail riante et joyeuse "
+            alt="photo professionnelle entreprise - Portrait d'une jeune femme au travail riante et joyeuse "
           />
         </div>
       </div>
@@ -563,16 +578,19 @@
           />
         </div>
       </div>
-      <div class="infos-bureau">
+      <address class="infos-bureau">
         <h3>Nina CARDUCCI - Photographe</h3>
-        <div>68 avenue Alsace-Lorraine - 33200 Bordeaux</div>
-        <div>Nouvelle Aquitaine</div>
-        <div>FRANCE</div>
-        <div>Mail: ninacarducci@cmoi.fr</div>
-        <div>Tél. : +33 5 56 67 78 89</div>
-        <div>
-          Accueil téléphoniques : du Lundi au Vendredi de 10:00 à 19:00.
-        </div>
+        <p>68 avenue Alsace-Lorraine - 33200 Bordeaux</p>
+        <p>Nouvelle Aquitaine</p>
+        <p>FRANCE</p>
+        <br>
+        <p>Mail: <a href="mailto:ninacarducci@cmoi.fr">ninacarducci@cmoi.fr</a></p>
+        <p>Tél: <a href="tel:+33556677889">+33 5 56 67 78 89</a></p>
+        <p>Accueil téléphonique du Lundi au Vendredi</p>
+        <div id="horaires">
+            <time datetime="10:00">10:00</time><span> - </span><time datetime="19:00">19:00</time>
+        </div> 
+      </address>
       </div>
     </footer>
 

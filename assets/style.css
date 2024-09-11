@@ -81,13 +81,15 @@ body {
 }
 .about-me__introduction {
 	font-family: 'Spectral';
-	font-weight: 500;/* Valeur initiale 800 */
+	font-weight: 600;/* Valeur initiale 800 */
 	font-style: italic;
-	width: 60%;
+	font-size: large;
+	width: 80%;
 }
 #about-me p {
 	width: 80%;
-	font-size: 14px;
+	font-size: 16px;/*Valeur initiale font-size: 14px;*/
+	
 }
 
 #gallery {
@@ -268,11 +270,29 @@ input[type="submit"] {
 }
 
 #form-maintenance a {
-	font-weight: 600;
-	color: #000000;
+	color: #000;
    }
    
+address p {
+	height: 10px;
+}
 
+/* Styles communs pour les liens mailto, tel, #services et #contact */
+a[href^="mailto:"], a[href^="tel:"], a[href^="#services"], a[href^="#contact"] {
+    color: #000;
+}
+
+/* Styles communs pour le hover des liens mailto, tel, #services et #contact */
+a[href^="mailto:"]:hover, a[href^="tel:"]:hover, a[href^="#services"]:hover, a[href^="#contact"]:hover {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#horaires {
+display: flex;
+flex-direction: row;
+}
 
 /*##################################### RESPONSIVE ############################################*/
 
@@ -384,6 +404,8 @@ input[type="submit"] {
 	.picture {
 		width: 80%;
 	}
+
+
 
 }
 
