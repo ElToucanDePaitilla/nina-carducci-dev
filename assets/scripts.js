@@ -67,8 +67,8 @@ $(document).ready(function() {
     });
 });
 
-
 /*Mise en cache dynamique des images du site, durée 30 jours*/
+/*
 $(document).ready(function () {
     // Fonction pour charger une image avec une version basée sur la date
     function loadImageWithCache(imageSelector) {
@@ -112,3 +112,4 @@ $(document).ready(function () {
         loadImageWithCache(this); // Charger chaque image avec le cache géré
     });
 });
+*/
