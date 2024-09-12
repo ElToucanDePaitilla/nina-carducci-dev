@@ -190,7 +190,6 @@ img {
 	justify-content: space-between;
 	display: flex;
 	padding : 2em 0;
-
 }
 
 .service {
@@ -327,6 +326,20 @@ height: auto;
 	#about-me h6, #about-me p {
 		width: 100%;
 	}
+
+	/*Boutons de controle next prev carousel*/
+	.carousel-control-prev-icon,
+	.carousel-control-next-icon {
+	width: 2.5rem;
+	height: 2.5rem;
+	}
+
+	/*Taille de l'aire de clic des boutons de controle next prev carousel*/
+	.carousel-control-prev,
+	.carousel-control-next {
+	width: 20%;
+	}
+
 }
 
 @media all and (max-width: 1000px) {
@@ -386,6 +399,19 @@ height: auto;
 		right: 0;
 		z-index: -1;
 	}
+
+	/*Boutons de controle next prev carousel*/
+	.carousel-control-prev-icon,
+	.carousel-control-next-icon {
+	width: 3rem;
+	height: 3rem;
+	}
+
+	/*Taille de l'aire de clic des boutons de controle next prev carousel*/
+	.carousel-control-prev,
+	.carousel-control-next {
+	width: 25%;
+	}
 }
 
 @media all and (max-width: 650px) {
@@ -422,7 +448,18 @@ height: auto;
 		width: 80%;
 	}
 
+	/*Taille des boutons de controle next prev carousel*/
+	.carousel-control-prev-icon,
+	.carousel-control-next-icon {
+	  width: 3rem;
+	  height: 3rem;
+	}
 
+    /*Taille de l'aire de clic des boutons de controle next prev carousel*/
+	.carousel-control-prev,
+	.carousel-control-next {
+	width: 30%;
+	}
 
 }
 
