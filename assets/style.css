@@ -190,6 +190,7 @@ img {
 	justify-content: space-between;
 	display: flex;
 	padding : 2em 0;
+
 }
 
 .service {
@@ -260,16 +261,15 @@ input[type="submit"] {
 }
 
 .infos-bureau {
-	margin-top: 60px;
+	margin-top: 40px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	z-index: 3;
 	z-index: 10;
     position: relative;
 	text-align: center;
     background-color: #d8d3a8;
-    padding: 50px;
+    padding: 10px;
     border-radius: 10px;
 	max-width: 560px;
 	margin-left: auto;
@@ -461,5 +461,6 @@ height: auto;
 	width: 30%;
 	}
 
+	
 }
 
