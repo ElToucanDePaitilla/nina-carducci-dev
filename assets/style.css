@@ -299,6 +299,8 @@ a:hover {
 .carousel-control-next {
   color: initial !important;
 }
+
+
 /*##################################### RESPONSIVE ############################################*/
 @media all and (max-width: 1180px) {
   .picture {
