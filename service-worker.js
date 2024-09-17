@@ -1,5 +1,5 @@
 // Nom du cache
-const CACHE_NAME = "nina-carducci-cache-v12";
+const CACHE_NAME = "nina-carducci-cache-v14";
 
 // Liste des ressources à mettre en cache (y compris les nouvelles images)
 const urlsToCache = [
@@ -13,14 +13,17 @@ const urlsToCache = [
   "./assets/images/slider/nina-Carducci-entreprise-homme-se-rendant-au-bureau-W650.webp",
   "./assets/images/slider/nina-Carducci-entreprise-homme-se-rendant-au-bureau-W1000.webp",
   "./assets/images/slider/nina-Carducci-entreprise-homme-se-rendant-au-bureau-W1920.webp",
+  "./assets/images/slider/nina-Carducci-entreprise-homme-se-rendant-au-bureau-light.jpg",
   "./assets/images/slider/nina-Carducci-mariage-couple-dansant-W320.webp",
   "./assets/images/slider/nina-Carducci-mariage-couple-dansant-W650.webp",
   "./assets/images/slider/nina-Carducci-mariage-couple-dansant-W1000.webp",
   "./assets/images/slider/nina-Carducci-mariage-couple-dansant-W1920.webp",
+  "./assets/images/slider/nina-Carducci-mariage-couple-dansant-light.jpg",
   "./assets/images/slider/nina-Carducci-portrait-homme-spectateur-concert-W320.webp",
   "./assets/images/slider/nina-Carducci-portrait-homme-spectateur-concert-W650.webp",
   "./assets/images/slider/nina-Carducci-portrait-homme-spectateur-concert-W1000.webp",
   "./assets/images/slider/nina-Carducci-portrait-homme-spectateur-concert-W1920.webp",
+  "./assets/images/slider/nina-Carducci-portrait-homme-spectateur-concert-light.jpg",
 ];
 
 // Installation du Service Worker
