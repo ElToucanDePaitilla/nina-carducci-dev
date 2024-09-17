@@ -300,6 +300,22 @@ a:hover {
   color: initial !important;
 }
 
+.prix {
+  font-size: calc(1.275rem + 0.3vw); /* Même que h4 */
+  font-weight: 500; /* Même que h4 */
+  line-height: 1.2; /* Même que h4 */
+  margin-bottom: 0.5rem; /* Même que h4 */
+  color: inherit; /* Utilise la couleur par défaut du texte */
+}
+
+#form-error {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #721c24;
+}
+
 
 /*##################################### RESPONSIVE ############################################*/
 @media all and (max-width: 1180px) {
