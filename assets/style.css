@@ -308,6 +308,14 @@ a:hover {
   color: inherit; /* Utilise la couleur par défaut du texte */
 }
 
+
+.service__price strong {
+  font-size: 1.25rem;
+}
+
+
+
+
 #form-error {
   background-color: #f8d7da;
   border: 1px solid #f5c6cb;
@@ -459,10 +467,34 @@ a:hover {
   .carousel-control-next {
     width: 30%;
   }
-  @media all and (max-width: 320px) {
-    .infos-bureau p:nth-of-type(1),
-    .infos-bureau p:nth-of-type(3) {
-      font-size: 13px;
-    }
-  }
 }
+
+@media all and (max-width: 320px) {
+  .infos-bureau p:nth-of-type(1),
+  .infos-bureau p:nth-of-type(3) {
+    font-size: 1rem;
+  }
+
+a[href^="tel:"] {
+  font-size: 1.4rem;
+}
+
+a[href^="mailto:"] {
+  font-size: 1rem;
+}
+
+}
+
+@media all and (max-width: 280px) {
+  .infos-bureau p:nth-of-type(1),
+  .infos-bureau p:nth-of-type(3) {
+    font-size: 0.8rem;
+  }
+
+}
+
+
+
+
+
+
