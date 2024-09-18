@@ -313,9 +313,6 @@ a:hover {
   font-size: 1.25rem;
 }
 
-
-
-
 #form-error {
   background-color: #f8d7da;
   border: 1px solid #f5c6cb;
@@ -323,6 +320,13 @@ a:hover {
   border-radius: 0.5rem;
   color: #721c24;
 }
+
+
+#nom-footer {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
 
 
 /*##################################### RESPONSIVE ############################################*/
